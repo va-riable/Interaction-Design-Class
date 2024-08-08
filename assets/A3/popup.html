@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<title>CUSTOM POP UP</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0>
+    <title>Popup</title>
+    <link rel="stylesheet" href="stylesforA3.css">
+</head>
+
+
+
+<script>
+ function myPopup(elemId, Vis){
+	document.getElementById(elemId).style.visibility = Vis;
+
+} 
+
+
+</script>
+
+<style>
+.messageClass{
+	position:relative;
+	height:30vw;
+	width:60vw;
+}
+
+.buttonClass {
+	position:relative;
+	height:4vw;
+	width:16vw;
+}
+
+.fontb{
+	font-family:'Times New Roman', serif;
+	font-size:2vw;
+}
+
+.fontm{
+	font-family:'Times New Roman', serif;
+	font-size: 4.5vw;
+ }
+
+a:link {
+      text-decoration: none;
+}
+
+a:visited {
+      text-decoration: none;
+}
+
+a:hover {
+      opacity:0.7;
+}
+a:active {
+      text-decoration: none;
+}
+
+a {
+		text-decoration: none;
+}
+</style>
+
+<center><a target="_parent" href="popup.html"><font class="fontm" style="color:violet">POPUP EXPERIMENTATION :)</font></a><center>
+
+<body style="background-color:rebeccapurple">
+
+
+
+			
+			<input class="buttonClass fontb"  type="button" style= "top:1vw;
+										left:-25vw"
+					value="CLICK ME!"
+					onclick="myPopup('divA','visible'),myPopup('divC','hidden')"></input>
+
+
+<div id="divA"
+		class="messageClass"
+	style="top:-3vw;
+			left:-5vw;
+			background-color:pink;
+			visibility:hidden"> <center><font class="fontm" style="color:rebeccapurple"><br>HAVE A NICE DAYY <br> 🌸🌺🌷(✿◡‿◡)🌷🌺🌸</font><center>
+			
+			<input  class="buttonClass fontb" type="button" style= "top:5vw;
+															left:vw;"
+					value="CANCEL :("
+					onclick="myPopup('divB','visible')"></input>
+					
+			<input  class="buttonClass fontb" type="button" style= "top:5vw;
+															left:vw;"
+					value="OK :)"
+					onclick="myPopup('divA','hidden'); myPopup('divC','visible')"></input>
+	</div>
+
+<div id="divB"
+		class="messageClass"
+		style="top:-15vw;
+			left:7vw;
+			margin-bottom:-100vw;
+			background-color:violet;
+			visibility:hidden"> <center><font class="fontm" style="color:rebeccapurple"><br>EXCUSE ME????<br>👿👿👿👿👿👿👿👿<br>(╯‵□′)╯︵┻━┻</font><center> 
+			
+			<input class="buttonClass fontb"  type="button" style= "top:;
+										left:"
+					value="RETRY"
+					onclick="myPopup('divA','hidden'),myPopup('divB','hidden')"></input>
+	</div>
+
+<div id="divC"
+		class="messageClass"
+		style="top:45vw;
+			left:vw;
+			background-color:violet;
+			visibility:hidden"> <center><font class="fontm" style="color:rebeccapurple">YOU MADE THE RIGHT CHOICE<br>🤩💪✨🎇🤘🎆✌🎇👍✨👌🤩<br>(☆▽☆)</font><center> </div>
+
+
+
+</body>
+
+
+
+
+</html>
