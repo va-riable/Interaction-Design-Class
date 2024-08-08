@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="stylesforA3.css">
+</head>
+
+
+
+<script>
+	
+	
+    function checkOrientation() {
+        // Check if the viewport is in portrait mode
+        const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+        
+        // Send an alert if the viewport is in portrait mode
+        if (isPortrait) {
+            alert("Switch to landscape mode");
+			document.getElementById("p").visibility = "visible";
+        }
+    }
+
+    // Call the function when the webpage is fully loaded
+    window.onload = checkOrientation;
+
+
+ var iframeUrls = [
+            "disp1/disp1.html",
+            "disp2/disp2.html",
+			"disp3/disp3.html",
+			"disp4/disp4.html",
+			
+            
+        ];
+        var currentIndex = 0;
+		
+        function updateIframe() {
+            document.getElementById('myIframe').src = iframeUrls[currentIndex];
+			var t = document.getElementById('myIframe').contentWindow.document = iframeUrls[currentIndex].title;
+			document.getElementById('iframeTitle').innerHTML = t;
+			
+        }
+
+        function shiftPageN() {
+            currentIndex = (currentIndex + 1) % iframeUrls.length;
+            updateIframe();
+        }
+
+        function shiftPageP() {
+            currentIndex = (currentIndex - 1 + iframeUrls.length) % iframeUrls.length;
+            updateIframe();
+        }
+
+        // Load the first iframe on page load
+        window.onload = updateIframe;
+
+	
+
+	
+
+</script>
+
+
+
+<div class="header"><br>
+	<font style="position:absolute;top:5vw;left:7vw;" class="fonth1 mid" >
+	
+	<a>Menu</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<a>Say Hi!</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<a>About Me</a>
+	
+	
+	</font>
+	<a target="_parent" href="1_openfirst_A3v1.html"><img class="logo" src="svg2.svg"
+	></img></a>
+</div>
+
+<div id="p" class="porty"><center>Sorry :( <br> Portrait View is Currently Unavailable <br> Switch to Landscape Instead! </center></div>
+
+<body style="background-color:rgb(241,218,196)">
+
+	<div id="introd" class="intro">
+	<br><center><font style="font-family:'georgia', serif;
+								font-size:3vw;
+								">Hello! <br>I'm Vasantha :D </font></center> 
+		<center><font style="font-family:'georgia', serif;
+							font-size:2.5vw;">
+							Welcome to My Portfolio </font></center>
+	
+	</div>
+	
+	
+
+	<image class= "profile" 
+			src="profiletest.jpg">
+	</image>
+	
+	<div class="content1">
+	<br><center><font class="fonth1"
+						style="color:rgb(166, 156, 172)"> *:･ﾟ✧ Lately ✧ﾟ･:* </font></center>
+	<center><video 
+			style="position:relative;top:2vw;width:30vw;border-radius:3vw" controls autoplay muted loop>
+			<source src="library.mp4" type="video/mp4">
+			</video></center>
+	
+		<center><font class="fonth3"
+						style="left:10%;right:10%;color:rgb(166, 156, 172)"><br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Donec dictum, ex a bibendum pulvinar, quam purus porttitor ligula, vitae facilisis augue ex v
+						itae odio. Sed et est tortor. Vivamus tristique, velit ac fringilla porttitor, orci 
+						quam condimentum justo, sit amet consectetur lorem lectus vel elit. Praesent quis nulla 
+						eu metus interdum pulvinar non efficitur sapien. </font></center>
+
+
+			
+	
+	</div>
+	
+	<div class="content2">
+		<font class="fonth1"
+					style="color:rgb(166, 156, 172);" ><center>☆ My Projects ☆</center></font>
+
+		<input  id ="n" type="button" 
+				class="butClass fontinp"
+				style="left:47vw;"
+				value="Next→"
+				onclick="shiftPageN()">
+		</input>
+		
+		<input  id= "p" type="button" 
+				class="butClass fontinp"
+				style="left:-4vw;"
+				value="←Prev"
+				onclick="shiftPageP()">
+		</input>
+				
+		
+			<iframe id="myIframe" class="disp" >
+			</iframe>
+	</div>
+	
+	<div class="content3">
+		
+		<center><iframe 
+			src="popup.html"
+			style="position:relative;top:1vw;width:28vw;height:17vw;border-radius:2vw">
+			</iframe></center>	
+		
+	</div>
+	
+	<div class="content4">
+		<center><video 
+			style="position:relative;top:1.3vw;width:17vw;border-radius:10vw;" controls autoplay muted loop>
+			<source src="awkward.mp4" type="video/mp4">
+			</video></center>
+	</div>
+</body>
+
+<div class="footer">
+<center><font class="fonth1">Thank You</font></center>
+	<p class=""><center><font class="fonth3">&copy; 2024 Vasantha Muthiah. All rights reserved.</font></center></p>
+</div>
+
+
+
+</html>
