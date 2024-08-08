@@ -1,0 +1,171 @@
+/* Fonts */
+/* ------------------------------------------------- */
+@font-face { font-family: FlowersKingdom; src: url('assets/flowers_kingdom/Flowers\ Kingdom.ttf');}
+@font-face { font-family: FiftiesMovies; src: url('assets/fifties_movies/Fifties\ Movies.ttf'); }
+@font-face { font-family: RusticRevival; src: url('assets/rustic_revival/Demo\ Rustic\ Revival.ttf'); }
+@font-face { font-family: Verve; src: url('assets/verve/Verve.ttf'); }
+@font-face { font-family: Athena; src: url('assets/athena/Athena-Regular\ \(PERSONAL\ USE\ ONLY\).ttf'); }
+
+
+
+
+/* CSS Resets */
+/* ------------------------------------------------- */
+
+html  {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3vh;
+}
+
+body  {
+  margin: 0;
+  padding: 10px;
+  height: 100vh;   
+  width: 100vw; 
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: white;
+}
+
+*   { 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header {
+  padding-right: 2vw;
+  padding-left:2vw ;
+}
+
+/* Overall Text Styles */
+/* ------------------------------------------------- */
+
+h1  {
+  display: inline;
+  font-family: FlowersKingdom;
+  font-size: 3vw;
+  font-weight: lighter;
+}
+
+h2  {
+  display: inline;
+  font-family: Verve;
+  font-size: 3vw;
+}
+
+h3 {
+  display: inline;
+  font-family: Athena;
+}
+
+p   {
+
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: red;
+}
+
+/* Sample General Container and Element Styles */
+/* Edit according to your preferences  */
+/* ------------------------------------------------- */
+
+section {
+  width: 100%;
+  background-color: lightgray;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.assignment-block {
+  padding: 10px;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  min-width: 320px;
+  max-width: 800px;
+  height: auto;
+  display: block;
+}
+
+iframe {
+  border: none;
+}
+
+.pdf {
+  width: 100%;
+  min-width: 320px;
+  max-width: 800px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+}
+
+
+/* Your specific Styles go here  */
+/* ------------------------------------------------- */
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 2vh;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 2vw;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 2vh;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  height: 80vh;
+}
+#myWeb {
+  position: relative;
+  top: 2vh;
+  left: 1vw;
+  height:75vh;
+  width:60vw;
+
+}
+
+#cnt1 {
+  position: relative;
+  border: 1px solid black;
+  top: -75vh;
+  left:62vw;
+  height:15vh;
+  width:33vw;
+  padding: 3vw;
+}
