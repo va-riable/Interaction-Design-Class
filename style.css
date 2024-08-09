@@ -15,7 +15,7 @@
 html  {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 3vh;
 }
 
@@ -59,6 +59,12 @@ h2  {
 h3 {
   display: inline;
   font-family: Athena;
+}
+
+h4   {
+  display: inline;
+  font-family: RusticRevival;
+  font-size: 3vw;
 }
 
 p   {
@@ -168,4 +174,12 @@ iframe {
   height:15vh;
   width:33vw;
   padding: 3vw;
+}
+
+.notesCnt {
+  position: relative;
+  border: 1px solid black;
+  height:90%;
+  width:45%;
+  padding: 2vw;
 }
