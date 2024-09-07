@@ -168,6 +168,7 @@ iframe {
 
 #cnt1 {
   position: relative;
+  border: 1px solid black;
   top: -75vh;
   padding: -75vh;
   left:62vw;
